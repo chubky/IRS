@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="js/main.js" type="module"></script>
+		<link rel="stylesheet" href="style.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		table, td, th {
+		  border: 1px solid black;
+		}
+		
+		table {
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+		
+		td {
+		  text-align: left;
+		  padding: 5px;
+		}
+		th {
+		  text-align: center;
+		}
+	</style>
+	<body>
+		<!-- Here a loader is created which
+			loads till response comes -->		
+		<h1>Vision Retrieval</h1>
+		<!-- table for showing data -->
+		<!-- <table id="employees"></table>
+		<img id="avatar" src="" alt="avatar" />
+		<video id="myvideo" controls autoplay>
+			<source id="mp4_src" src="" type="">
+		</video> -->
+
+		<form  id="uploadForm">
+			<label for="type">Choose input type:</label>
+			<select name="type" id="selectInput">
+				<option value="img" selected>Image</option>
+				<option value="text">Text</option>
+			</select>
+			<br>
+			<div id="inputImage">
+				<br>
+				<input type='file' id="uploader"/>
+				<br><img id="myImg" src="#" style="height: 150px;width: 150px;">
+				<!-- <button id="submitInput">Upload</button> -->
+				<br>
+				<br><button id="submitInput">Retrieve</button>
+			</div>
+			<div id="inputText">
+				<br>
+				<label for="query">Query: </label>
+				<input type='text' id="query"/>
+				<br>
+				<br><button id="submitInputText">Retrieve</button>
+			</div>
+			
+		</form>
+
+		<table style="width:100%" id="retriveTable">			
+		</table>
+	</body>
+</html>
